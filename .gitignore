@@ -23,48 +23,19 @@
 # Logs and databases #
 ######################
 *.log
-*.sql
-*.sqlite
+#include stdio.h
+#include cs50
+void rec (int    n );
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+int main (void){
+         rec (5);
+}
 
-###### Other
+void rec (int    n ) {
+if rec (n==0){ 
+return;
+}
 
-*.vtk
-*.swp
-install-sh
-AUTHORS
-COPYING
-ChangeLog
-INSTALL
-NEWS
-README
-Makefile
-Makefile.in
-config.status
-config.guess
-config.sub
-configure
-numerics
-**/.deps
-**/src/config
-aclocal.m4
-**/autom4te.cache
-compile
-depcomp
-missing
-src/mem_map
-#**/performance/
-previous_measure
-previous_measureg
-previous_measurev
-*.html
-test_save
+printf (“ welcome brother in your world \n”);
+ rec (n - 1);
+} 
